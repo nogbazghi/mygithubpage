@@ -9,6 +9,8 @@
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
         <title>Nahom's Website</title>
+        <link rel="stylesheet" href="imageeffect.css">
+        <script src="imagemodal.js"></script>
         <!-- Bootstrap core CSS -->
         <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -24,7 +26,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        
+
         <style>
             #title {
         	        font-weight: bold;
@@ -37,17 +39,18 @@
                     height: auto;
                 }
         </style>
+
     </head>
     <body>
         <div class="container">
             <div class="header clearfix">
-                <!-- <nav>
+                <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Projects</a></li>
             <li role="presentation"><a href="#">Contact</a></li>
           </ul>
-        </nav> -->
+        </nav>
                  <h3 class="text-muted">Nahom's Personal Website</h3>
 
             </div>
@@ -57,10 +60,10 @@
                 <img src="ProfessionalPic.jpg" width="260" height="275" alt="default avatar" display: inline;>
                 <p class="lead">Welcome to my Website!</p>
                 <p>
-                    <a class="btn btn-lg btn-success" href="https://linkedin.com/in/nahomogbazghi" role="button">LinkedIn</a>
+                    <a class="btn btn-lg btn-success" href="https://www.linkedin.com/in/nahom-ogbazghi-8a64727" role="button">LinkedIn</a>
                     <a class="btn btn-lg btn-success" href="https://drive.google.com/file/d/0Bxn_OsoDj08tVVp3S1VUMXVKMkE/preview" role="button">Resume</a>
                     <a class="btn btn-lg btn-success" href="https://github.com/nogbazghi" role="button">GitHub</a>
-                    <a class="btn btn-lg btn-success" href="mailto:nogbazg@emory.edu" role="button">Email Me</a>
+                    <a class="btn btn-lg btn-success" href="mailto:nogbazghi@gmail.com" role="button">Email Me</a>
                 </p>
             </div>
             <div class="row marketing">
@@ -79,6 +82,7 @@
                                 <p>Particularly:</p>
                                 <ul>
                                     <li id="title">Software Engineering</li>
+                                    <li id="title">Systems Engineering</li>
                                     <li id="title">Project Management</li>
                                     <li id="title">Consulting</li>
                                 </ul>
@@ -86,7 +90,7 @@
                                 <ul>
                                     <li id="title">Java</li>
                                     <li id="title">Front End(JavaScript, CSS, HTML)</li>
-                                    <li id="title">Back End(PHP, AJAX, SQL/MySQL)</li>
+                                    <li id="title">Back End(PHP, AJAX, SQL/MySQL/Postgresql)</li>
                                     <li id="title">Python</li>
                                     <li id="title">GitHub</li>
                                     <li id="title">Powershell</li>
@@ -97,6 +101,7 @@
                                     <li id="title">Eclipse</li>
                                     <li id="title">Notepad++</li>
                                     <li id="title">Pycharm</li>
+                                    <li id="title">ATOM</li>
                                     <li id="title">Windows PowerShell ISE</li>
                                 </ul>
                             </div>
@@ -108,7 +113,6 @@
 							<a data-toggle="collapse" data-parent="#accordion"
 								href="#collapse2">Education</a>
 						</h4>
-
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -127,7 +131,6 @@
 							<a data-toggle="collapse" data-parent="#accordion"
 								href="#collapse3">Work Experiences</a>
 						</h4>
-
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -238,5 +241,28 @@
             <!-- /container -->
             <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
             <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+          </script>
     </body>
 </html>
