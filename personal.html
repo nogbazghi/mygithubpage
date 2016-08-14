@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>Nahom's Website</title>
+    <link rel="stylesheet" href="imageeffect.css">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+        #title {
+            font-weight: bold;
+        }
+
+        #position {
+            font-style: italic;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="nogbazghi.github.io/index.html">Home</a></li>
+                    <li role="presentation"><a href="nogbazghi.github.io/project.html">Projects</a></li>
+                    <li role="presentation" class="active"><a href="nogbazghi.github.io/personal.html">About Me</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Nahom's Personal Website</h3>
+
+        </div>
+        <div class="jumbotron">
+            <h1>About Me</h1>
+
+            <p class="lead">This is where you may get to know me a little better.</p>
+        </div>
+        <div class="row marketing">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion"
+								href="#collapse1">Things I like to do</a>
+						</h4>
+
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Play basketball</li>
+                                <li>Read sports, technology, articles</li>
+                                <li>Listen to music (priamrily hip hop)</li>
+                                <li>Watch sports (NFL, NBA, and Premier League primarily)</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+
+        <script>
+            function image(img) {
+                var src = img.src;
+                window.open(src);
+            }
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+</body>
+
+</html>
