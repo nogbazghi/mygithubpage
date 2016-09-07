@@ -1,215 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- <link rel="icon" href="../../favicon.ico"> -->
-        <title>Nahom's Website</title>
-        <link rel="stylesheet" href="imageeffect.css">
-        <!-- <script src="imagemodal.js"></script> -->
-        <!-- Bootstrap core CSS -->
-        <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-        <!-- Custom styles for this template -->
-        <link href="jumbotron-narrow.css" rel="stylesheet">
-        <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-        <style>
-          #title {
-  	        font-weight: bold;
-        	}
-        	#position {
-  	        font-style: italic;
-        	}
-        	img {
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>Nahom's Website</title>
+    <link rel="stylesheet" href="imageeffect.css">
+
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+        #title {
+            font-weight: bold;
+        }
+
+        #position {
+            font-style: italic;
+        }
+
+        img {
             max-width: 100%;
             height: auto;
-          }
-        </style>
+        }
+    </style>
 
-    </head>
-    <body>
-        <div class="container">
-            <div class="header clearfix">
-                <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" ><a href="nogbazghi.github.io/index.html">Home</a></li>
-            <li role="presentation" class="active"><a href="nogbazghi.github.io/project.html">Projects</a></li>
-            <li role="presentation"><a href="nogbazghi.github.io/personal.html">About Me</a></li>
-          </ul>
-        </nav>
-                 <h3 class="text-muted">Nahom's Personal Website</h3>
+</head>
 
-            </div>
-            <div class="jumbotron">
-                	<h1>Projects</h1>
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="nogbazghi.github.io/index.html">Home</a></li>
+                    <li role="presentation" class="active"><a href="nogbazghi.github.io/project.html">Projects</a></li>
+                    <li role="presentation"><a href="nogbazghi.github.io/personal.html">About Me</a></li>
+                </ul>
+            </nav>
 
-                <p class="lead">These are projects I have been apart of, in various roles.</p>
-            </div>
-            <div class="row marketing">
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            	<h4 class="panel-title">
+        </div>
+        <div class="jumbotron">
+            <h1>Projects</h1>
+
+            <p class="lead">These are projects I have been apart of, in various roles.</p>
+        </div>
+        <div class="row marketing">
+            <div class="panel-group" id="accordion">
+              <!-- Class Scheduler -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
 							<a data-toggle="collapse" data-parent="#accordion"
 								href="#collapse1"> Class Scheduler</a>
 						</h4>
 
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <p id = "title">Roles: Project Manager, Lead Backend Developer</p>
-
-                                <!-- Trigger the Modal -->
-                                <img id="myImg" src="Course Scheduler.png" alt = "Course Scheduler" width="200" height="150">
-
-                                <!-- The Modal -->
-                                <div id="myModal" class="modal">
-
-                                  <!-- The Close Button -->
-                                  <span class="close" onclick="document.getElementById('myModal').style.display='none' var modalImg = document.getElementById("img01");">&times;</span>
-
-                                  <!-- Modal Content (The Image) -->
-                                  <img class="modal-content" id="img01">
-
-                                  <!-- Modal Caption (Image Text) -->
-                                  <div id="caption"></div>
-                                </div>
-
-                                <p>The class scheduler is a website appication that allows the user to schedule courses using a GUI interface. I served as Project Manager and Backend Developer along side two other team members and the web application was created to serve as course scheduling
-                                    platform for Emory's Math and CS Director</p>
-                            </div>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p id="title">Roles: Project Manager, Lead Backend Developer</p>
+                            <!-- Modal Image -->
+                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+                                <img id="CSchd" src="Course Scheduler.png" width="200" height="150">
+                            </a>
+                            <p>The class scheduler is a website appication that allows the user to schedule courses using a GUI interface. I served as Project Manager and Backend Developer along side two other team members and the web application was created
+                                to serve as course scheduling platform for Emory"s Math and CS Director</p>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            	<h4 class="panel-title">
+                </div>
+                <!-- ROMIEIT -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
 							<a data-toggle="collapse" data-parent="#accordion"
 								href="#collapse2">Roomieit</a>
 						</h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse">
-                          <div class="panel-body">
-
-                              <p id = "title">Roles: Project Manager</p>
-
-                              <!-- Trigger the Modal -->
-                              <img id="myImg" src="Roomie ™.png" alt="Roomie" width="200" height="150" onclick="image(this)">
-
-                              <!-- The Modal -->
-                              <!-- <div id="myModal1" class="modal"> -->
-
-                                <!-- The Close Button -->
-                                <!-- <span class="close" onclick="document.getElementById('myModal1').style.display='none' var modalImg = document.getElementById("img02");">&times;</span> -->
-
-                                <!-- Modal Content (The Image) -->
-                                <!-- <img class="modal-content" id="img02"> -->
-
-                                <!-- Modal Caption (Image Text) -->
-                                <!-- <div id="caption"></div>
-                              </div> -->
-                              <p>Roomie is a web application that matches the user with potential roommates based on information manually inputed by the user. It can be further enhanced by mining the users facebook account for additional information that can further improve matching</p>
-                          </div>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p id="title">Roles: Project Manager</p>
+                            <!-- Modal Image -->
+                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+                                <img id="Roomie" src="Roomie ™.png" alt="Roomie" width="200" height="150" onclick="image(this)">
+                            </a>
+                            <p>Roomie is a web application that matches the user with potential roommates based on information manually inputed by the user. It can be further enhanced by mining the users facebook account for additional information that can
+                                further improve matching</p>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            	<h4 class="panel-title">
+                </div>
+                <!-- Scraper -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
 							<a data-toggle="collapse" data-parent="#accordion"
 								href="#collapse3">Scraper</a>
 						</h4>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">
-                              <p id = "title">Independent</p>
-                              <!-- Trigger the Modal -->
-                              <img id="myImg" src="Scraper.PNG" alt="Scraper" width="200" height="150" onclick="image(this)">
-                              <img id="myImg" src="Learn Tigrinya.png" alt="Trolltunga, Norway" width="200" height="150" onclick="image(this)">
-                              <!-- The Modal -->
-                              <!-- <div id="myModal2" class="modal"> -->
-                                <!-- The Close Button -->
-                                <!-- <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span> -->
-                                <!-- Modal Content (The Image) -->
-                                <!-- <img class="modal-content" id="img01"> -->
-                                <!-- Modal Caption (Image Text) -->
-                                <!-- <div id="caption"></div>
-                              </div> -->
-                              <p>I developed a scraper that pulled English-Tygrinya translations, part of speech, and tense from a website and organized it into arrays that could be query-ed</p>
-                            </div>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p id="title">Independent</p>
+                            <!-- Modal Image -->
+                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+                                <img id="Scrap" src="Scraper.PNG" alt="Scraper" width="200" height="150" onclick="image(this)">
+                            </a>
+                            <!-- Modal Image -->
+                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+                                <img id="Tigr" src="Learn Tigrinya.png" alt="Trolltunga, Norway" width="200" height="150" onclick="image(this)">
+                            </a>
+                            <p>I developed a scraper that pulled English-Tygrinya translations, part of speech, and tense from a website and organized it into arrays that could be query-ed</p>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            	<h4 class="panel-title">
+                </div>
+<!-- Messaging Client -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
 							<a data-toggle="collapse" data-parent="#accordion"
 								href="#collapse4">Messaging client</a>
 						</h4>
-                        </div>
-                        <div id="collapse4" class="panel-collapse collapse">
-                            <div class="panel-body">
-
-                                <p id = "title">Independent</p>
-                                <!-- Trigger the Modal -->
-                                <img id="myImg" src="Message.png" alt="Message" width="200" height="150" onclick="image(this)">
-
-                                <!-- The Modal -->
-                                <!-- <div id="myModal3" class="modal"> -->
-                                  <!-- The Close Button -->
-                                  <!-- <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span> -->
-                                  <!-- Modal Content (The Image) -->
-                                  <!-- <img class="modal-content" id="img01"> -->
-                                  <!-- Modal Caption (Image Text) -->
-                                  <!-- <div id="caption"></div> -->
-                                <!-- </div> -->
-                                <p>I developed a messaging client that requests for a username and from their allows you to message anyone that has already has a username.
-                                  All participants must be connected within the same database which is a Postgresql database. Google's Material design, Bootstrap and basic CSS is used for style.
-                                It is currently in development but progress is being made on a weekly basis. </p>
-                            </div>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p id="title">Independent</p>
+                            <!-- Modal Image -->
+                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+                                <img id="Mess" src="Message.png" alt="Message" width="200" height="150" onclick="image(this)">
+                            </a>
+                            <p>I developed a messaging client that requests for a username and from their allows you to message anyone that has already has a username. All participants must be connected within the same database which is a Postgresql database.
+                                Google"s Material design, Bootstrap and basic CSS is used for style. It is currently in development but progress is being made on a weekly basis. </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- /container -->
 
-            <script>
-            function image(img) {
-                var src = img.src;
-                window.open(src);
-            }
-            // Get the modal
-            var modal = document.getElementById('myModal');
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- //Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- The Close Button -->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" id="showImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById('myImg');
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                modalImg.alt = this.alt;
-                captionText.innerHTML = this.alt;
-            }
+        </div>
+        <!-- /container -->
 
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
+        <script>
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-          </script>
-    </body>
+            $(document).ready(function() {
+                $('img').on("click", function() {
+                    $("#showImg").empty();
+                    var image = $(this).attr("src");
+                    console.log(image);
+                    $("#showImg").append("<img class='img-responsive' src='" + image + "' />");
+                })
+            });
+        </script>
+</body>
+
 </html>
