@@ -1,3 +1,13 @@
+#title {
+  font-weight: bold;
+}
+#position {
+  font-style: italic;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* Style the Image Used to Trigger the Modal */
 #myImg {
 

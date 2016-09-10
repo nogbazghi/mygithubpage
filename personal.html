@@ -6,39 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
-    <title>Nahom's Website</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="imageeffect.css">
-
     <!-- Custom styles for this template -->
     <link href="jumbotron-narrow.css" rel="stylesheet">
-    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <style>
-        #title {
-            font-weight: bold;
-        }
-
-        #position {
-            font-style: italic;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -55,8 +33,7 @@
         </div>
         <div class="jumbotron">
             <h1>About Me</h1>
-
-            <p class="lead">This is where you may get to know me a little better.</p>
+            <p class="lead">Read to get to know me a little better.</p>
         </div>
         <div class="row marketing">
             <div class="panel-group" id="accordion">
@@ -72,49 +49,34 @@
                         <div class="panel-body">
                             <ul>
                                 <li>Play basketball</li>
-                                <li>Read sports, technology, articles</li>
+                                <li>Read sports, technology, and activist articles</li>
                                 <li>Listen to music (priamrily hip hop)</li>
                                 <li>Watch sports (NFL, NBA, and Premier League primarily)</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion"
+								href="#collapse2">Check out my Instagram!</a>
+						</h4>
+
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p> My Instagram shows you a snapshot of some of the things apart of my life.</p>
+                          <!-- SnapWidget -->
+                          <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                          <iframe src="https://snapwidget.com/embed/248392" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <h3>Check out my instagram!</h3>
-        <!-- SnapWidget -->
-        <script src="https://snapwidget.com/js/snapwidget.js"></script>
-        <iframe src="https://snapwidget.com/embed/248392" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
       </div><!-- /container -->
-
-        <script>
-            function image(img) {
-                var src = img.src;
-                window.open(src);
-            }
-            // Get the modal
-            var modal = document.getElementById('myModal');
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById('myImg');
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                modalImg.alt = this.alt;
-                captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-        </script>
 </body>
 
 </html>
