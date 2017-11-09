@@ -36,20 +36,6 @@ angular.
         })
         console.log(buttonClicked);
 
-        var parentEl = angular.element(document.body);
-        $mdDialog.show({
-          parent: parentEl,
-          targetEvent: $event,
-          templateUrl: 'projects/dialogs.tmpl.html',
-          locals: { items: $scope.items  },
-          controller: DialogController
-        });
-        function DialogController($scope, $mdDialog, items) {
-          $scope.items = items;
-          $scope.closeDialog = function() {
-            $mdDialog.hide();
-          }
-        }
         buttonClicked = "";
       }
     }
