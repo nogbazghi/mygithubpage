@@ -4,6 +4,6 @@ angular.
     templateUrl: 'personal/personal.template.js',
     controller: function PersonalController() {
       this.parts = ['About', 'Instagram', 'Books']
-      this.characteristics= ['open minded','proud Eritrean','coder','Play basketball','Read sports, technology, and social issues articles','Listen to music (priamrily hip hop)','watch the NFL, NBA, and Premier League']
+      this.characteristics= ['I\'m an American Eritrean.','I\'ve been to Singapore, Malaysia, and Thailand.','I like to code.','I love to play basketball.','I love to read sports, technology, and social issues articles.','I listen to music (priamrily hip hop).','I like to watch the NFL, NBA, and Premier League.']
     }
   });

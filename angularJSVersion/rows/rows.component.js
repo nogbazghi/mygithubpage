@@ -39,7 +39,7 @@ angular.
         {
           company: "Overlay Technology",
           position: "Software Engineering Intern",
-          duration: "Jun 2017-Aug 2017",
+          duration: "Jun 2017 - Aug 2017",
           location: "SINGAPORE, SG",
           skills: "Developed the front end of the first iteration for the web interface in Angular2 that served as a compliment to the AR Android app. Able to connect the login to the Django Rest Framework, and documented coding methods to ease further implementations. Project was not hosted on Github until later end of development, but approximately 15-20 files were created. Debugged and implemented dragging on Vuforia Android application."
         },{
@@ -64,7 +64,7 @@ angular.
       ]
       this.courses = [ 'Data Structures and Algorithms','Computing for Bioinformatics','Software Engineering','Computational Linguistics','Computer Science Practicum','Database Systems','Systems Programming','Artificial Intelligence','Data Mining','Theory of Computing']
       this.jobs = ['Software Engineering', 'Systems Engineering', 'Project Management','Consulting']
-      this.languages = ['Java','Front End(JavaScript, CSS, HTML, AngularJS, Angular)','Back End(PHP, AJAX, SQL/MySQL/Postgresql, Django)','Python','Git','Powershell','Jython','Linux','C']
+      this.languages = ['Front End(JavaScript, CSS, HTML, AngularJS, Angular)','Back End(PHP, AJAX, SQL/MySQL/Postgresql, Django)','Git','Powershell','Jython','Linux','C']
       this.ides = ['Eclipse','Notepad++','Pycharm','ATOM','Windows PowerShell ISE', 'Android Studio']
     }
   });
