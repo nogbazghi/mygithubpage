@@ -8,13 +8,13 @@ angular.
             link: 'https://linkedin.com/in/nahomogbazghi',
             name: 'LinkedIn'
           },{
-            link: 'https://drive.google.com/file/d/0Bxn_OsoDj08taXlYblROMFBFcnc/view?usp=sharing',
+            link: 'https://drive.google.com/file/d/0Bxn_OsoDj08tR1UzUllFSHJFcFU/view?usp=sharing',
             name: 'Resume'
           },{
             link: 'https://github.com/nogbazghi',
             name: 'GitHub'
           },{
-            link: 'mailto:nogbazghi@gmail.com',
+            link: 'mailto:nogbazghi@alumni.emory.edu',
             name: 'Email Me'
           }
       ];
