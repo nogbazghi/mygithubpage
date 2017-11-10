@@ -23,21 +23,21 @@ angular.
           var buttonClicked = ev.currentTarget.id;
           var confirm = $mdDialog.confirm()
                 .title('Redirect')
-                .textContent('Clicking this link will redirect you to my '+ buttonClicked)
+                .textContent('Clicking this link will redirect you to my '+ buttonClicked +'. Are you okay with this?')
                 .ariaLabel('Lucky day')
                 .targetEvent(ev)
-                .ok('Please do it!')
-                .cancel('Nevermind, I\'ll stay here.');
+                .cancel('Nevermind, I\'ll stay here.')
+                .ok('Sure!');
 
           $mdDialog.show(confirm).then(function() {
             var buttons =
                 { LinkedIn: 'https://linkedin.com/in/nahomogbazghi',
 
-                  Resume: 'https://drive.google.com/file/d/0Bxn_OsoDj08taXlYblROMFBFcnc/view?usp=sharing',
+                  Resume: 'https://drive.google.com/file/d/0Bxn_OsoDj08tR1UzUllFSHJFcFU/view?usp=sharing',
 
                   GitHub: 'https://github.com/nogbazghi',
 
-                  EmailMe: 'mailto:nogbazghi@gmail.com',
+                  EmailMe: 'mailto:nogbazghi@alumni.emory.edu',
 
                 };
           window.location.assign(buttons[buttonClicked]);
