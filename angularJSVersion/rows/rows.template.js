@@ -33,7 +33,7 @@
       <span>
         <h5>{{school.name}}</h5>
         <h4>{{school.degree}}</h4>
-        <h4>{{school.duration}}</h4>
+        <h7>{{school.duration}}</h4>
       </span>
       <md-divider></md-divider>
     </md-list-item>
@@ -49,14 +49,23 @@
          <md-divider></md-divider>
        </md-list-item>
   </div>
+
   <div ng-if="row.number == 4">
+    <h3>Google Student Ambassador</h3>
     <p>Acted as a liaison between Google and Emory University.
     Responsibilities consisted of learning about innovative Google products and programs, planning and host fun events on campus, acting as a campus contact for Google teams, and helping Google better understand each university’s culture.
     Increased Google at Emory University Facebook page by over 80% over the course of two semesters.</p>
+<p>Other additional activites and accomplishments: </p>
+    <md-list-item style = "margin-bottom: 10px;" ng-repeat = "item in $ctrl.accomplishments" ng-value ="item" ng-click="null">
+         <div class="md-list-item-text" layout="column" >
+           <h5>{{item}}</h5>
+         </div>
+         <md-divider></md-divider>
+       </md-list-item>
   </div>
 
-  <div ng-if="row.number == 6" style = "margin-bottom: 10px;">
-  // Display courses
+  <div ng-if="row.number == 5" style = "margin-bottom: 10px;">
+  <!-- Display courses -->
     <md-list-item ng-click="null" ng-repeat = "course in $ctrl.courses" ng-value= "course">
       <p>{{course}}</p>
       <md-divider></md-divider>

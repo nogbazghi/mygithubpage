@@ -14,14 +14,11 @@ angular.
           header: 'Work Experience',
           number: '3'
         },{
-          header: 'Activities',
+          header: 'Activities/Achievements',
           number: '4'
         },{
-          header: 'Accolades/Achievements',
-          number: '5'
-        },{
           header: 'Notable Courses Taken',
-          number: '6'
+          number: '5'
         }
       ]
       this.colleges = [
@@ -66,5 +63,6 @@ angular.
       this.jobs = ['Software Engineering', 'Systems Engineering', 'Project Management','Consulting']
       this.languages = ['Front End(JavaScript, CSS, HTML, AngularJS, Angular)','Back End(PHP, AJAX, SQL/MySQL/Postgresql, Django)','Git','Powershell','Jython','Linux','C']
       this.ides = ['Eclipse','Notepad++','Pycharm','ATOM','Windows PowerShell ISE', 'Android Studio']
+      this.accomplishments = ['Opportunity Hub - Pearlio Intern 2013-2014', 'Gates Millenium Scholar', 'GSU Dean\'s List Fall 2013']
     }
   });
