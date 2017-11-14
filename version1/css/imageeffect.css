@@ -1,17 +1,6 @@
 #title {
   font-weight: bold;
 }
-
-body, html, .main {
-    height: 100%;
-}
-#sidebar {
-    position: fixed;
-    top: 100px;
-    right: 10px;
-    border: solid black;
-    background-color: white;
-}
 #position {
   font-style: italic;
 }

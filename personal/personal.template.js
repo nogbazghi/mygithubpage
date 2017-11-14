@@ -18,7 +18,7 @@
                               <!-- SnapWidget -->
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
     <iframe src="https://snapwidget.com/embed/248392" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-<hr>
+    <hr>
   </div>
   <div ng-if ="part == 'Books'" >
     <p>These are books I have read and would absolutely recommend:</p>
@@ -63,9 +63,15 @@
       <span><a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034/ref=sr_1_1?ie=UTF8&qid=1482623057&sr=8-1&keywords=How+To+Win+Friends+%26+Influence+People">How To Win Friends & Influence People</a> - Dale Carnegie</span>
       <md-divider></md-divider>
     </md-list-item>
-
-
-<hr>
+    <hr>
   </div>
-
+  <div ng-if ="part == 'Website Progress'" >
+    <p>I've been working on my frontend skills by rebuilding my website with different frameworks. My most recent rebuild is currently AngularJS. I am working on React.</p>
+    <p>You can see my previous versions:</p>
+    <md-list-item ng-click="null" >
+      <span><a href="https://www.nahomogbazghi.com">Basic HTML,JS,CSS</a></span>
+      <md-divider></md-divider>
+    </md-list-item>
+    <hr>
+  </div>
 </div>
