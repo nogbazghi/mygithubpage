@@ -59,6 +59,7 @@ function requestData(req, url) {
   req.open('GET', url, true);
   req.responseType = 'json';
   req.setRequestHeader('Content-Type', 'application/xml');
+  req.setRequestHeader("Access-Control-Allow-Origin", "*");
   req.send();
 }
 
