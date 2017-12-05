@@ -58,6 +58,7 @@ var boxscore = '_boxscore.json';
 function requestData(req, url) {
   req.open('GET', url, true);
   req.responseType = 'json';
+  req.setRequestHeader('Content-Type', 'application/xml');
   req.send();
 }
 
